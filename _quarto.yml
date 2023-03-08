@@ -3,11 +3,13 @@ project:
 
 book:
   title: "R book for Actuarial Student"
-  author: "Jane Doe"
+  author: "Krishna Kumar Shrestha & Indira Aryal"
   date: "3/8/2023"
   chapters:
     - index.qmd
     - Chapter1.qmd
+    - chapter2.qmd
+    - chapter3.qmd
     - intro.qmd
     - summary.qmd
     - references.qmd

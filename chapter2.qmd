@@ -1,0 +1,197 @@
+# Chapter 2: Basics of R
+
+## Arithmetic Operations in R
+
+R can perform a wide variety of arithmetic operations, including addition, subtraction, multiplication, division, and more. In this chapter, we'll cover the basic arithmetic operations in R.
+
+### Addition
+
+To add two numbers in R, you can use the `+` operator. For example:
+
+```{r}
+25+12
+```
+
+### Subtraction
+
+To subtract one number from another in R, you can use the `-` operator. For example:
+
+```{r}
+25-15
+```
+
+### Multiplication
+
+To multiply two numbers in R, you can use the `*` operator. For example:
+
+```{r}
+2*23
+```
+
+### Division
+
+To divide one number by another in R, you can use the `/` operator. For example:
+
+```{r}
+2*25
+```
+
+### Exponentiation
+
+To raise a number to a power in R, you can use the `^` operator. For example:
+
+```{r}
+2^3
+```
+
+### Modulus
+
+The modulus operator `%/%` gives the quotient of the division of two numbers.
+
+```{r}
+5 %/% 2
+
+```
+
+The modulus operator `%%` gives the remainder of the division of two numbers.
+
+```{r}
+5 %% 2
+```
+
+### Order of Operations
+
+R follows the BODMAS rule when evaluating expressions.
+
+```{r}
+
+2+ 3*(5+4)/3
+```
+
+### Exercises
+
+1\. Write a script file In r to calculate `2*2+3^4`.
+
+2.  Calculate the remainder when 24 is divided by 5 (Script)
+3.  Calculate the quotient when 24 is divided by 5 (Script)
+4.  Calculate the value of `(3+2)^2/(6-2)` (Console)
+
+## Operators
+
+Operators are symbols or functions used to perform operations on values or variables in R. They are an essential part of programming in R, and allow you to perform a wide range of mathematical and logical operations. In this chapter, we'll cover the basics of operators in R, including arithmetic, comparison, and logical operators.
+
+### Arithmetic operators 
+
+Arithmetic operators are used to perform mathematical operations on values in R. The most common arithmetic operators in R are:
+
+-   **`+`**: Addition
+
+-   **`-`**: Subtraction
+
+-   **`*`**: Multiplication
+
+-   **`/`**: Division
+
+-   **`^`**: Exponentiation
+
+-   **`%%`**: Modulus
+
+-   **`%/%`**: Integer division
+
+### Comparison Operators
+
+Comparison operators are used to compare values in R. They return a Boolean value (**`TRUE`** or **`FALSE`**) based on whether the comparison is true or false. The most common comparison operators in R are:
+
+-   **`==`**: Equal to
+
+-   **`!=`**: Not equal to
+
+-   **`<`**: Less than
+
+-   **`>`**: Greater than
+
+-   **`<=`**: Less than or equal to
+
+-   **`>=`**: Greater than or equal to
+
+for example, to compare two values in R:
+
+```{r}
+2 > 3
+3 != 2
+```
+
+### Logical Operators
+
+Logical operators are used to perform logical operations on Boolean values in R. The most common logical operators in R are:
+
+-   **`!`**: NOT operator
+
+-   **`&`**: AND operator
+
+-   **`|`**: OR operator
+
+-   **`xor()`**: XOR operator
+
+For example, to perform a logical AND operation on two Boolean values (**`TRUE`** and **`FALSE`**) in R, you would use the **`&`** operator. Here's an example:
+
+```{r}
+TRUE & FALSE
+TRUE | FALSE
+```
+
+### Assignment Operator
+
+The assignment operator is one of the most fundamental operators in R. It is used to assign a value to a variable or an object. In this chapter, we'll cover the basics of the assignment operator in R, including its syntax and some best practices.
+
+
+
+In R, the assignment operator is denoted by **`<-`**. It is used to assign a value to a variable or an object. For example, to assign the value 15 to a variable named **`x`**, you would use the following code:
+
+```{r}
+x<-15
+```
+
+This code assigns the value `15` to a variable name `x`.
+
+The **`<-`** operator is the traditional way of assigning values to variables in R, while **`=`** is a more recent addition to the language and is used as an alternative to **`<-`**. Both operators can be used interchangeably for most purposes, but there are some differences in how they are parsed by R.
+
+### Comment in R
+
+In R, the comment operator is denoted by the **`#`** symbol. It is used to add comments to your code, which are ignored by R when it executes your program.
+
+Comments are useful for providing additional information about your code or explaining your thought process to other programmers who may be reading your code.
+
+Here's an example :
+
+```{r}
+# First lets create a variable x and store 25
+x <- 25 # here x is my variable name, <- is the assignment operator and 25 is the value i need to store
+
+```
+
+### Exercise
+
+1.  Create a variable called **`x`** and assign it the value **`5`**. Then, use the **`==`** operator to check if **`x`** is equal to **`5`**. Store the result in a new variable called **`a`**.
+
+2.  Write an expression that uses the **`!=`** operator to check if **`x`** is not equal to **`4`**. Store the result in a new variable called **`b`**.
+
+3.  Create a variable called **`y`** and assign it the value **`10`**. Then, use the **`>`** operator to check if **`y`** is greater than **`x`**. Store the result in a new variable called **`c`**.
+
+4.  Write an expression that uses the **`<`** operator to check if **`y`** is less than or equal to **`10`**. Store the result in a new variable called **`d`**.
+
+5.  Create a variable called **`z`** and assign it the value **`15`**. Then, use the **`>=`** operator to check if **`z`** is greater than or equal to **`y`**. Store the result in a new variable called **`e`**.
+
+6.  Write an expression that uses the **`<=`** operator to check if **`x`** is less than or equal to **`5`**. Store the result in a new variable called **`f`**.
+
+7.  Create a variable called **`a1`** and assign it the value **`TRUE`**. Then, use the **`&&`** operator to check if **`a1`** is **`TRUE`** and if **`b`** (from exercise 2) is **`TRUE`**. Store the result in a new variable called **`g`**.
+
+8.  Write an expression that uses the **`||`** operator to check if either **`c`** (from exercise 3) is **`TRUE`** or **`d`** (from exercise 4) is **`FALSE`**. Store the result in a new variable called **`h`**.
+
+9.  Create a variable called **`i`** and assign it the value **`"apple"`**. Then, use the **`%in%`** operator to check if **`"apple"`** is in the vector **`c("orange", "banana", "apple", "grape")`**. Store the result in a new variable called **`j`**.
+
+10. Write an expression that uses the **`%/%`** operator to find the integer quotient when **`z`** (from exercise 5) is divided by **`3`**. Store the result in a new variable called **`k`**.
+
+\
+
+

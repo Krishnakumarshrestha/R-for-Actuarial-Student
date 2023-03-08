@@ -1,9 +1,22 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+*As a student studying for actuarial exams, you know that statistical programming plays an important role in the field. R is a widely used programming language for statistical computing and analysis, and is a required topic in many actuarial exams. However, learning R can be daunting, especially if you have little to no programming experience.*
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+*This book is designed to help you learn R programming in a way that is relevant to your actuarial studies. It covers the essential concepts you need to know to confidently use R in your actuarial exam. From basic arithmetic operations to advanced data manipulation and modeling techniques, this book provides a comprehensive guide to R programming for actuarial students.*
 
-```{r}
-1 + 1
-```
+*Each chapter includes examples and exercises that are specifically designed to prepare you for actuarial exams. The exercises cover topics such as probability distributions, statistical inference, and financial modeling, which are all important topics in the actuarial profession.*
+
+*The book assumes no prior programming experience, making it accessible to students from all backgrounds. It is also written in a clear and concise style, with a focus on practical applications rather than theoretical concepts.*
+
+*We wrote this book based on our experience as actuarial students. We believe that learning R is an essential skill for anyone studying for actuarial exams, and We hope this book will help you achieve your goals.*
+
+*We would like to thank our colleagues and students for their feedback and support throughout the writing process. We would also like to thank the actuarial community for creating such a challenging and rewarding profession.*
+
+*Finally, we encourage readers to share their feedback and suggestions for future editions of the book. Please feel free to contact us at \[email address\] with any comments or questions.*
+
+*Best of luck with your studies!*
+
+*\[Your Name\]*
+
+*\
+*

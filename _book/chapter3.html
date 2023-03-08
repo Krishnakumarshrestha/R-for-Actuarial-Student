@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R book for Actuarial Student - 4&nbsp; Introduction</title>
+<title>R book for Actuarial Student - 3&nbsp; Data Types and Variable Creation in R : Best Practices</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,25 +83,6 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
 </style>
 
 
@@ -112,8 +93,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
-<link href="./chapter3.html" rel="prev">
+<link href="./intro.html" rel="next">
+<link href="./chapter2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -152,7 +133,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Types and Variable Creation in R : Best Practices</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -192,12 +173,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Types and Variable Creation in R : Best Practices</span></a>
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Types and Variable Creation in R : Best Practices</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -215,14 +196,27 @@ div.csl-indent {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#data-type-in-r" id="toc-data-type-in-r" class="nav-link active" data-scroll-target="#data-type-in-r"><span class="toc-section-number">3.1</span>  Data type in R</a>
+  <ul class="collapse">
+  <li><a href="#numeric-data-type" id="toc-numeric-data-type" class="nav-link" data-scroll-target="#numeric-data-type"><span class="toc-section-number">3.1.1</span>  Numeric Data Type</a></li>
+  <li><a href="#character-data-type" id="toc-character-data-type" class="nav-link" data-scroll-target="#character-data-type"><span class="toc-section-number">3.1.2</span>  Character Data Type</a></li>
+  <li><a href="#logical-data-type" id="toc-logical-data-type" class="nav-link" data-scroll-target="#logical-data-type"><span class="toc-section-number">3.1.3</span>  Logical Data Type</a></li>
+  <li><a href="#date-and-time-data-type" id="toc-date-and-time-data-type" class="nav-link" data-scroll-target="#date-and-time-data-type"><span class="toc-section-number">3.1.4</span>  Date and Time Data Type</a></li>
+  <li><a href="#working-with-data-types-in-r" id="toc-working-with-data-types-in-r" class="nav-link" data-scroll-target="#working-with-data-types-in-r"><span class="toc-section-number">3.1.5</span>  Working with Data Types in R</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Types and Variable Creation in R : Best Practices</span></h1>
 </div>
 
 
@@ -236,21 +230,70 @@ div.csl-indent {
 
 </header>
 
-<p>This is a book created from markdown and executable code.</p>
-<p>See <span class="citation" data-cites="knuth84">Knuth (<a href="references.html#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
+<blockquote class="blockquote">
+<p>In this chapter,the following topics are:</p>
+<ol type="1">
+<li><p>Introduction to data types in R, including numeric, character, logical, and factor.</p></li>
+<li><p>Naming conventions for variables in R, including using descriptive and meaningful names that follow a consistent format.</p></li>
+<li><p>Best practices for creating variables, including avoiding reserved words and using lowercase letters with underscores between words for better readability.</p></li>
+<li><p>Using the <strong><code>class()</code></strong> function to check the data type of a variable and the <strong><code>typeof()</code></strong> function to check the underlying data type.</p></li>
+<li><p>Understanding the difference between value and reference types in R.</p></li>
+<li><p>Creating and working with vectors, including using the <strong><code>c()</code></strong> function to concatenate values and the <strong><code>seq()</code></strong> function to generate sequences.</p></li>
+<li><p>Understanding the importance of data type conversions in R and using functions like <strong><code>as.numeric()</code></strong>, <strong><code>as.character()</code></strong>, and <strong><code>as.logical()</code></strong> to convert data types as needed.</p></li>
+<li><p>Tips for efficient memory management when working with large data sets, including avoiding unnecessary variable creation and removing unused variables from memory.</p></li>
+</ol>
+</blockquote>
+<section id="data-type-in-r" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="data-type-in-r"><span class="header-section-number">3.1</span> Data type in R</h2>
+<p>In this chapter, we will learn about the different data types available in R, their properties, and how to work with them.</p>
+<section id="numeric-data-type" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="numeric-data-type"><span class="header-section-number">3.1.1</span> Numeric Data Type</h3>
+<p>Numeric data type represents real numbers in R. It includes <code>integers</code>, <code>floating-point numbers</code> and <code>complex numbers</code>.</p>
+<p>Here is an example 3.1:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="co"># integer</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fl">2.5</span> <span class="co"># float</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="dv">2</span><span class="sc">+</span> 3i <span class="co"># complex number</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.5</code></pre>
 </div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>z</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2+3i</code></pre>
+</div>
+</div>
+</section>
+<section id="character-data-type" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="character-data-type"><span class="header-section-number">3.1.2</span> Character Data Type</h3>
+</section>
+<section id="logical-data-type" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="logical-data-type"><span class="header-section-number">3.1.3</span> Logical Data Type</h3>
+<p>Logical data type represents boolean values in R, which can be either <strong><code>TRUE</code></strong> or <strong><code>FALSE</code></strong>. It is created using the <strong><code>TRUE</code></strong> and <strong><code>FALSE</code></strong> keywords or the <strong><code>T</code></strong> and <strong><code>F</code></strong> shorthand.</p>
+<p>Here is the example 3.2:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> T <span class="co"># You can use TRUE in place of T</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> F <span class="co"># You can also use FAlSE in place of F</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="date-and-time-data-type" class="level3" data-number="3.1.4">
+<h3 data-number="3.1.4" class="anchored" data-anchor-id="date-and-time-data-type"><span class="header-section-number">3.1.4</span> Date and Time Data Type</h3>
+<p>Date and time data type represents dates and times in R. They are created using the <strong><code>as.Date()</code></strong> and <strong><code>as.POSIXct()</code></strong> functions.</p>
+<p>Here is an example 3.3:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dob <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="st">"1996-10-10"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="working-with-data-types-in-r" class="level3" data-number="3.1.5">
+<h3 data-number="3.1.5" class="anchored" data-anchor-id="working-with-data-types-in-r"><span class="header-section-number">3.1.5</span> Working with Data Types in R</h3>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-knuth84" class="csl-entry" role="doc-biblioentry">
-Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
-</div>
-</div>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -353,13 +396,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter3.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Types and Variable Creation in R : Best Practices</span></span>
+      <a href="./chapter2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: Basics of R</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./intro.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

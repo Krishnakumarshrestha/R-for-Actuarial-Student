@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./chapter2.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -105,12 +105,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: Basics of R</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Types and Variable Creation in R : Best Practices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -123,7 +133,16 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#install-r-and-rstudio" id="toc-install-r-and-rstudio" class="nav-link active" data-scroll-target="#install-r-and-rstudio"><span class="toc-section-number">1.1</span>  Install R and RStudio:</a></li>
+  <li><a href="#what-is-a-script" id="toc-what-is-a-script" class="nav-link" data-scroll-target="#what-is-a-script"><span class="toc-section-number">1.2</span>  What is a Script ?</a></li>
+  <li><a href="#the-console-environment-in-rstudio" id="toc-the-console-environment-in-rstudio" class="nav-link" data-scroll-target="#the-console-environment-in-rstudio"><span class="toc-section-number">1.3</span>  The Console Environment In Rstudio</a></li>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise"><span class="toc-section-number">1.4</span>  Exercise</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -144,8 +163,52 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>R is a free, open-source programming language and software environment for statistical computing, data analysis, and graphics. It has become increasingly popular among data analysts, statisticians, and researchers due to its ease of use, flexibility, and powerful capabilities.</p>
+<p>For actuarial students, R is an essential tool for data analysis, modeling, and simulation. Actuaries use statistical techniques and models to evaluate and manage financial risks, and R provides a wide range of tools for performing these tasks.</p>
+<p>R allows actuarial students to perform statistical analysis, generate reports, and create visualizations that can help them communicate complex financial concepts to stakeholders. With R, students can easily handle large data sets, perform statistical modeling, and make predictions about future events.</p>
+<p>Moreover, R is becoming more widely used in the actuarial industry, with many employers now requiring their employees to have a working knowledge of the language. As such, learning R can give actuarial students a competitive edge in the job market and help them advance in their careers.</p>
+<p>In summary, R is important for actuarial students because it provides them with a powerful tool for data analysis, modeling, and simulation that is increasingly in demand in the actuarial profession.</p>
+<section id="install-r-and-rstudio" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="install-r-and-rstudio"><span class="header-section-number">1.1</span> Install R and RStudio:</h2>
+<p>Installing R and RStudio is a relatively straightforward process. Here are the steps to follow:</p>
+<ul>
+<li><p>Installing R</p></li>
+<li><p>Go to the official R project website at [**https://www.r-project.org/**](https://www.r-project.org/)</p></li>
+<li><p>Click on the “CRAN” link under the “Download” section on the left-hand side of the page</p></li>
+<li><p>Select a mirror location near you</p></li>
+<li><p>Choose the appropriate installation file for your operating system (e.g., Windows, Mac, or Linux)</p></li>
+<li><p>Download and run the installation file</p></li>
+<li><p>Follow the prompts to complete the installation</p></li>
+<li><p>Installing RStudio</p></li>
+<li><p>Go to the official RStudio website at [**https://www.rstudio.com/products/rstudio/download/**](https://www.rstudio.com/products/rstudio/download/)</p></li>
+<li><p>Choose the appropriate version of RStudio for your operating system (e.g., Windows, Mac, or Linux)</p></li>
+<li><p>Download and run the installation file</p></li>
+<li><p>Follow the prompts to complete the installation</p></li>
+</ul>
+<p>Once you have both R and RStudio installed, you can launch.RStudio and start using R to perform data analysis, modeling, and simulation. In RStudio, you can write and run R code in the Console, which is located in the bottom left-hand corner of the screen. You can also create and save R scripts, plots, and reports using the various tabs in the top right-hand corner of the screen.</p>
+</section>
+<section id="what-is-a-script" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="what-is-a-script"><span class="header-section-number">1.2</span> What is a Script ?</h2>
+<p>if you are new to programming, you may be wondering what a script is. In programming, a script is a set of instructions that a computer can follow. Scripts can be used to automate tasks perform calculations, manupulate data, and more.</p>
+<p>In R, a script is a text file that contains R code. You can create a new script in RStudio by going to File&gt; New File &gt; R Script. This will open a new window where you can write your code.</p>
+<p>One of the advantages of using a script is that it allows you to save your code so that you can reuse it later. You can also edit and modify your code as needed. Another advantage of using a script is that it allows you to document your code. You can add comments to your code to explain what each section of code does.</p>
+<p>When you run a script in RStudio,the code is executed line by line. The output of each line of code is displayed in the console, which is a window in RStudio that displays the results of your code. You can also view the output of your script in the environment pane, which displays objects that are created by your code.</p>
+</section>
+<section id="the-console-environment-in-rstudio" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="the-console-environment-in-rstudio"><span class="header-section-number">1.3</span> The Console Environment In Rstudio</h2>
+<p>The console environment in Rstudio is where you can interact with R directly. It is where you can type in R commands and get immediate feedback on the results. The console can be used to perform simple calculations, manipulate data, and execute R function.</p>
+<p>To access the console in Rstudio, you can either click on the console tab in the bottom-left pane or use the keyboard shortcut Ctrl +2 (windows) or Command + 2 (Mac)</p>
+</section>
+<section id="exercise" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="exercise"><span class="header-section-number">1.4</span> Exercise</h2>
+<ol type="1">
+<li>Write the difference between R and Rstudio</li>
+<li>Write the difference between console and script</li>
+</ol>
+<p>&nbsp;</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -253,8 +316,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: Basics of R</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

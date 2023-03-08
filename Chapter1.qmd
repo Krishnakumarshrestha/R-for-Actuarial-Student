@@ -1,1 +1,64 @@
 # Chapter 1 : Introduction 
+
+R is a free, open-source programming language and software environment for statistical computing, data analysis, and graphics. It has become increasingly popular among data analysts, statisticians, and researchers due to its ease of use, flexibility, and powerful capabilities.
+
+For actuarial students, R is an essential tool for data analysis, modeling, and simulation. Actuaries use statistical techniques and models to evaluate and manage financial risks, and R provides a wide range of tools for performing these tasks.
+
+R allows actuarial students to perform statistical analysis, generate reports, and create visualizations that can help them communicate complex financial concepts to stakeholders. With R, students can easily handle large data sets, perform statistical modeling, and make predictions about future events.
+
+Moreover, R is becoming more widely used in the actuarial industry, with many employers now requiring their employees to have a working knowledge of the language. As such, learning R can give actuarial students a competitive edge in the job market and help them advance in their careers.
+
+In summary, R is important for actuarial students because it provides them with a powerful tool for data analysis, modeling, and simulation that is increasingly in demand in the actuarial profession.
+
+## Install R and RStudio:
+
+Installing R and RStudio is a relatively straightforward process. Here are the steps to follow:
+
+ - Installing R
+
+ - Go to the official R project website at \[\*\*https://www.r-project.org/\*\*\](https://www.r-project.org/)
+
+ - Click on the "CRAN" link under the "Download" section on the left-hand side of the page
+
+ - Select a mirror location near you
+
+ - Choose the appropriate installation file for your operating system (e.g., Windows, Mac, or Linux)
+
+ - Download and run the installation file
+
+ - Follow the prompts to complete the installation
+
+ - Installing RStudio
+
+ - Go to the official RStudio website at \[\*\*https://www.rstudio.com/products/rstudio/download/\*\*\](https://www.rstudio.com/products/rstudio/download/)
+
+ - Choose the appropriate version of RStudio for your operating system (e.g., Windows, Mac, or Linux)
+
+ - Download and run the installation file
+
+ - Follow the prompts to complete the installation
+
+Once you have both R and RStudio installed, you can launch.RStudio and start using R to perform data analysis, modeling, and simulation. In RStudio, you can write and run R code in the Console, which is located in the bottom left-hand corner of the screen. You can also create and save R scripts, plots, and reports using the various tabs in the top right-hand corner of the screen.
+
+## What is a Script ?
+
+if you are new to programming, you may be wondering what a script is. In programming, a script is a set of instructions that a computer can follow. Scripts can be used to automate tasks perform calculations, manupulate data, and more.
+
+In R, a script is a text file that contains R code. You can create a new script in RStudio by going to File\> New File \> R Script. This will open a new window where you can write your code.
+
+One of the advantages of using a script is that it allows you to save your code so that you can reuse it later. You can also edit and modify your code as needed. Another advantage of using a script is that it allows you to document your code. You can add comments to your code to explain what each section of code does.
+
+When you run a script in RStudio,the code is executed line by line. The output of each line of code is displayed in the console, which is a window in RStudio that displays the results of your code. You can also view the output of your script in the environment pane, which displays objects that are created by your code.
+
+## The Console Environment In Rstudio
+
+The console environment in Rstudio is where you can interact with R directly. It is where you can type in R commands and get immediate feedback on the results. The console can be used to perform simple calculations, manipulate data, and execute R function.
+
+To access the console in Rstudio, you can either click on the console tab in the bottom-left pane or use the keyboard shortcut Ctrl +2 (windows) or Command + 2 (Mac)
+
+## Exercise 
+
+1.  Write the difference between R and Rstudio
+2.  Write the difference between console and script
+
+ 

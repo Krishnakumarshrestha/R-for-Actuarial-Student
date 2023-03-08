@@ -4,19 +4,82 @@
     "href": "index.html",
     "title": "R book for Actuarial Student",
     "section": "",
-    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "As a student studying for actuarial exams, you know that statistical programming plays an important role in the field. R is a widely used programming language for statistical computing and analysis, and is a required topic in many actuarial exams. However, learning R can be daunting, especially if you have little to no programming experience.\nThis book is designed to help you learn R programming in a way that is relevant to your actuarial studies. It covers the essential concepts you need to know to confidently use R in your actuarial exam. From basic arithmetic operations to advanced data manipulation and modeling techniques, this book provides a comprehensive guide to R programming for actuarial students.\nEach chapter includes examples and exercises that are specifically designed to prepare you for actuarial exams. The exercises cover topics such as probability distributions, statistical inference, and financial modeling, which are all important topics in the actuarial profession.\nThe book assumes no prior programming experience, making it accessible to students from all backgrounds. It is also written in a clear and concise style, with a focus on practical applications rather than theoretical concepts.\nWe wrote this book based on our experience as actuarial students. We believe that learning R is an essential skill for anyone studying for actuarial exams, and We hope this book will help you achieve your goals.\nWe would like to thank our colleagues and students for their feedback and support throughout the writing process. We would also like to thank the actuarial community for creating such a challenging and rewarding profession.\nFinally, we encourage readers to share their feedback and suggestions for future editions of the book. Please feel free to contact us at [email address] with any comments or questions.\nBest of luck with your studies!\n[Your Name]"
+  },
+  {
+    "objectID": "Chapter1.html",
+    "href": "Chapter1.html",
+    "title": "1  Chapter 1 : Introduction",
+    "section": "",
+    "text": "R is a free, open-source programming language and software environment for statistical computing, data analysis, and graphics. It has become increasingly popular among data analysts, statisticians, and researchers due to its ease of use, flexibility, and powerful capabilities.\nFor actuarial students, R is an essential tool for data analysis, modeling, and simulation. Actuaries use statistical techniques and models to evaluate and manage financial risks, and R provides a wide range of tools for performing these tasks.\nR allows actuarial students to perform statistical analysis, generate reports, and create visualizations that can help them communicate complex financial concepts to stakeholders. With R, students can easily handle large data sets, perform statistical modeling, and make predictions about future events.\nMoreover, R is becoming more widely used in the actuarial industry, with many employers now requiring their employees to have a working knowledge of the language. As such, learning R can give actuarial students a competitive edge in the job market and help them advance in their careers.\nIn summary, R is important for actuarial students because it provides them with a powerful tool for data analysis, modeling, and simulation that is increasingly in demand in the actuarial profession."
+  },
+  {
+    "objectID": "Chapter1.html#install-r-and-rstudio",
+    "href": "Chapter1.html#install-r-and-rstudio",
+    "title": "1  Chapter 1 : Introduction",
+    "section": "1.1 Install R and RStudio:",
+    "text": "1.1 Install R and RStudio:\nInstalling R and RStudio is a relatively straightforward process. Here are the steps to follow:\n\nInstalling R\nGo to the official R project website at [**https://www.r-project.org/**](https://www.r-project.org/)\nClick on the “CRAN” link under the “Download” section on the left-hand side of the page\nSelect a mirror location near you\nChoose the appropriate installation file for your operating system (e.g., Windows, Mac, or Linux)\nDownload and run the installation file\nFollow the prompts to complete the installation\nInstalling RStudio\nGo to the official RStudio website at [**https://www.rstudio.com/products/rstudio/download/**](https://www.rstudio.com/products/rstudio/download/)\nChoose the appropriate version of RStudio for your operating system (e.g., Windows, Mac, or Linux)\nDownload and run the installation file\nFollow the prompts to complete the installation\n\nOnce you have both R and RStudio installed, you can launch.RStudio and start using R to perform data analysis, modeling, and simulation. In RStudio, you can write and run R code in the Console, which is located in the bottom left-hand corner of the screen. You can also create and save R scripts, plots, and reports using the various tabs in the top right-hand corner of the screen."
+  },
+  {
+    "objectID": "Chapter1.html#what-is-a-script",
+    "href": "Chapter1.html#what-is-a-script",
+    "title": "1  Chapter 1 : Introduction",
+    "section": "1.2 What is a Script ?",
+    "text": "1.2 What is a Script ?\nif you are new to programming, you may be wondering what a script is. In programming, a script is a set of instructions that a computer can follow. Scripts can be used to automate tasks perform calculations, manupulate data, and more.\nIn R, a script is a text file that contains R code. You can create a new script in RStudio by going to File> New File > R Script. This will open a new window where you can write your code.\nOne of the advantages of using a script is that it allows you to save your code so that you can reuse it later. You can also edit and modify your code as needed. Another advantage of using a script is that it allows you to document your code. You can add comments to your code to explain what each section of code does.\nWhen you run a script in RStudio,the code is executed line by line. The output of each line of code is displayed in the console, which is a window in RStudio that displays the results of your code. You can also view the output of your script in the environment pane, which displays objects that are created by your code."
+  },
+  {
+    "objectID": "Chapter1.html#the-console-environment-in-rstudio",
+    "href": "Chapter1.html#the-console-environment-in-rstudio",
+    "title": "1  Chapter 1 : Introduction",
+    "section": "1.3 The Console Environment In Rstudio",
+    "text": "1.3 The Console Environment In Rstudio\nThe console environment in Rstudio is where you can interact with R directly. It is where you can type in R commands and get immediate feedback on the results. The console can be used to perform simple calculations, manipulate data, and execute R function.\nTo access the console in Rstudio, you can either click on the console tab in the bottom-left pane or use the keyboard shortcut Ctrl +2 (windows) or Command + 2 (Mac)"
+  },
+  {
+    "objectID": "Chapter1.html#exercise",
+    "href": "Chapter1.html#exercise",
+    "title": "1  Chapter 1 : Introduction",
+    "section": "1.4 Exercise",
+    "text": "1.4 Exercise\n\nWrite the difference between R and Rstudio\nWrite the difference between console and script"
+  },
+  {
+    "objectID": "chapter2.html",
+    "href": "chapter2.html",
+    "title": "2  Chapter 2: Basics of R",
+    "section": "",
+    "text": "R can perform a wide variety of arithmetic operations, including addition, subtraction, multiplication, division, and more. In this chapter, we’ll cover the basic arithmetic operations in R.\n\n\nTo add two numbers in R, you can use the + operator. For example:\n\n25+12\n\n[1] 37\n\n\n\n\n\nTo subtract one number from another in R, you can use the - operator. For example:\n\n25-15\n\n[1] 10\n\n\n\n\n\nTo multiply two numbers in R, you can use the * operator. For example:\n\n2*23\n\n[1] 46\n\n\n\n\n\nTo divide one number by another in R, you can use the / operator. For example:\n\n2*25\n\n[1] 50\n\n\n\n\n\nTo raise a number to a power in R, you can use the ^ operator. For example:\n\n2^3\n\n[1] 8\n\n\n\n\n\nThe modulus operator %/% gives the quotient of the division of two numbers.\n\n5 %/% 2\n\n[1] 2\n\n\nThe modulus operator %% gives the remainder of the division of two numbers.\n\n5 %% 2\n\n[1] 1\n\n\n\n\n\nR follows the BODMAS rule when evaluating expressions.\n\n2+ 3*(5+4)/3\n\n[1] 11\n\n\n\n\n\n1. Write a script file In r to calculate 2*2+3^4.\n\nCalculate the remainder when 24 is divided by 5 (Script)\nCalculate the quotient when 24 is divided by 5 (Script)\nCalculate the value of (3+2)^2/(6-2) (Console)"
+  },
+  {
+    "objectID": "chapter2.html#operators",
+    "href": "chapter2.html#operators",
+    "title": "2  Chapter 2: Basics of R",
+    "section": "2.2 Operators",
+    "text": "2.2 Operators\nOperators are symbols or functions used to perform operations on values or variables in R. They are an essential part of programming in R, and allow you to perform a wide range of mathematical and logical operations. In this chapter, we’ll cover the basics of operators in R, including arithmetic, comparison, and logical operators.\n\n2.2.1 Arithmetic operators\nArithmetic operators are used to perform mathematical operations on values in R. The most common arithmetic operators in R are:\n\n+: Addition\n-: Subtraction\n*: Multiplication\n/: Division\n^: Exponentiation\n%%: Modulus\n%/%: Integer division\n\n\n\n2.2.2 Comparison Operators\nComparison operators are used to compare values in R. They return a Boolean value (TRUE or FALSE) based on whether the comparison is true or false. The most common comparison operators in R are:\n\n==: Equal to\n!=: Not equal to\n<: Less than\n>: Greater than\n<=: Less than or equal to\n>=: Greater than or equal to\n\nfor example, to compare two values in R:\n\n2 > 3\n\n[1] FALSE\n\n3 != 2\n\n[1] TRUE\n\n\n\n\n2.2.3 Logical Operators\nLogical operators are used to perform logical operations on Boolean values in R. The most common logical operators in R are:\n\n!: NOT operator\n&: AND operator\n|: OR operator\nxor(): XOR operator\n\nFor example, to perform a logical AND operation on two Boolean values (TRUE and FALSE) in R, you would use the & operator. Here’s an example:\n\nTRUE & FALSE\n\n[1] FALSE\n\nTRUE | FALSE\n\n[1] TRUE\n\n\n\n\n2.2.4 Assignment Operator\nThe assignment operator is one of the most fundamental operators in R. It is used to assign a value to a variable or an object. In this chapter, we’ll cover the basics of the assignment operator in R, including its syntax and some best practices.\nIn R, the assignment operator is denoted by <-. It is used to assign a value to a variable or an object. For example, to assign the value 15 to a variable named x, you would use the following code:\n\nx<-15\n\nThis code assigns the value 15 to a variable name x.\nThe <- operator is the traditional way of assigning values to variables in R, while = is a more recent addition to the language and is used as an alternative to <-. Both operators can be used interchangeably for most purposes, but there are some differences in how they are parsed by R.\n\n\n2.2.5 Comment in R\nIn R, the comment operator is denoted by the # symbol. It is used to add comments to your code, which are ignored by R when it executes your program.\nComments are useful for providing additional information about your code or explaining your thought process to other programmers who may be reading your code.\nHere’s an example :\n\n# First lets create a variable x and store 25\nx <- 25 # here x is my variable name, <- is the assignment operator and 25 is the value i need to store\n\n\n\n2.2.6 Exercise\n\nCreate a variable called x and assign it the value 5. Then, use the == operator to check if x is equal to 5. Store the result in a new variable called a.\nWrite an expression that uses the != operator to check if x is not equal to 4. Store the result in a new variable called b.\nCreate a variable called y and assign it the value 10. Then, use the > operator to check if y is greater than x. Store the result in a new variable called c.\nWrite an expression that uses the < operator to check if y is less than or equal to 10. Store the result in a new variable called d.\nCreate a variable called z and assign it the value 15. Then, use the >= operator to check if z is greater than or equal to y. Store the result in a new variable called e.\nWrite an expression that uses the <= operator to check if x is less than or equal to 5. Store the result in a new variable called f.\nCreate a variable called a1 and assign it the value TRUE. Then, use the && operator to check if a1 is TRUE and if b (from exercise 2) is TRUE. Store the result in a new variable called g.\nWrite an expression that uses the || operator to check if either c (from exercise 3) is TRUE or d (from exercise 4) is FALSE. Store the result in a new variable called h.\nCreate a variable called i and assign it the value \"apple\". Then, use the %in% operator to check if \"apple\" is in the vector c(\"orange\", \"banana\", \"apple\", \"grape\"). Store the result in a new variable called j.\nWrite an expression that uses the %/% operator to find the integer quotient when z (from exercise 5) is divided by 3. Store the result in a new variable called k."
+  },
+  {
+    "objectID": "chapter3.html",
+    "href": "chapter3.html",
+    "title": "3  Data Types and Variable Creation in R : Best Practices",
+    "section": "",
+    "text": "In this chapter,the following topics are:\n\nIntroduction to data types in R, including numeric, character, logical, and factor.\nNaming conventions for variables in R, including using descriptive and meaningful names that follow a consistent format.\nBest practices for creating variables, including avoiding reserved words and using lowercase letters with underscores between words for better readability.\nUsing the class() function to check the data type of a variable and the typeof() function to check the underlying data type.\nUnderstanding the difference between value and reference types in R.\nCreating and working with vectors, including using the c() function to concatenate values and the seq() function to generate sequences.\nUnderstanding the importance of data type conversions in R and using functions like as.numeric(), as.character(), and as.logical() to convert data types as needed.\nTips for efficient memory management when working with large data sets, including avoiding unnecessary variable creation and removing unused variables from memory."
+  },
+  {
+    "objectID": "chapter3.html#data-type-in-r",
+    "href": "chapter3.html#data-type-in-r",
+    "title": "3  Data Types and Variable Creation in R : Best Practices",
+    "section": "3.1 Data type in R",
+    "text": "3.1 Data type in R\nIn this chapter, we will learn about the different data types available in R, their properties, and how to work with them.\n\n3.1.1 Numeric Data Type\nNumeric data type represents real numbers in R. It includes integers, floating-point numbers and complex numbers.\nHere is an example 3.1:\n\nx <- 2 # integer\ny <- 2.5 # float\nz <- 2+ 3i # complex number\nx\n\n[1] 2\n\ny\n\n[1] 2.5\n\nz\n\n[1] 2+3i\n\n\n\n\n3.1.2 Character Data Type\n\n\n3.1.3 Logical Data Type\nLogical data type represents boolean values in R, which can be either TRUE or FALSE. It is created using the TRUE and FALSE keywords or the T and F shorthand.\nHere is the example 3.2:\n\na <- T # You can use TRUE in place of T\nb <- F # You can also use FAlSE in place of F\n\n\n\n3.1.4 Date and Time Data Type\nDate and time data type represents dates and times in R. They are created using the as.Date() and as.POSIXct() functions.\nHere is an example 3.3:\n\ndob <- as.Date(\"1996-10-10\")\n\n\n\n3.1.5 Working with Data Types in R"
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "2  Introduction",
+    "title": "4  Introduction",
     "section": "",
     "text": "See Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "3  Summary",
+    "title": "5  Summary",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
   },

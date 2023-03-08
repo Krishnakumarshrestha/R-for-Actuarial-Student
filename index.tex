@@ -213,7 +213,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, enhanced, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, breakable, sharp corners, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, enhanced, sharp corners, borderline west={3pt}{0pt}{shadecolor}, breakable, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -227,25 +227,126 @@
 \chapter*{Preface}\label{preface}}
 \addcontentsline{toc}{chapter}{Preface}
 
-This is a Quarto book.
+\emph{As a student studying for actuarial exams, you know that
+statistical programming plays an important role in the field. R is a
+widely used programming language for statistical computing and analysis,
+and is a required topic in many actuarial exams. However, learning R can
+be daunting, especially if you have little to no programming
+experience.}
 
-To learn more about Quarto books visit
-\url{https://quarto.org/docs/books}.
+\emph{This book is designed to help you learn R programming in a way
+that is relevant to your actuarial studies. It covers the essential
+concepts you need to know to confidently use R in your actuarial exam.
+From basic arithmetic operations to advanced data manipulation and
+modeling techniques, this book provides a comprehensive guide to R
+programming for actuarial students.}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\DecValTok{1} \SpecialCharTok{+} \DecValTok{1}
-\end{Highlighting}
-\end{Shaded}
+\emph{Each chapter includes examples and exercises that are specifically
+designed to prepare you for actuarial exams. The exercises cover topics
+such as probability distributions, statistical inference, and financial
+modeling, which are all important topics in the actuarial profession.}
 
-\begin{verbatim}
-[1] 2
-\end{verbatim}
+\emph{The book assumes no prior programming experience, making it
+accessible to students from all backgrounds. It is also written in a
+clear and concise style, with a focus on practical applications rather
+than theoretical concepts.}
+
+\emph{We wrote this book based on our experience as actuarial students.
+We believe that learning R is an essential skill for anyone studying for
+actuarial exams, and We hope this book will help you achieve your
+goals.}
+
+\emph{We would like to thank our colleagues and students for their
+feedback and support throughout the writing process. We would also like
+to thank the actuarial community for creating such a challenging and
+rewarding profession.}
+
+\emph{Finally, we encourage readers to share their feedback and
+suggestions for future editions of the book. Please feel free to contact
+us at {[}email address{]} with any comments or questions.}
+
+\emph{Best of luck with your studies!}
+
+\emph{{[}Your Name{]}}
+
+\emph{\hfill\break
+}
 
 \bookmarksetup{startatroot}
 
 \hypertarget{chapter-1-introduction}{%
 \chapter{Chapter 1 : Introduction}\label{chapter-1-introduction}}
+
+R is a free, open-source programming language and software environment
+for statistical computing, data analysis, and graphics. It has become
+increasingly popular among data analysts, statisticians, and researchers
+due to its ease of use, flexibility, and powerful capabilities.
+
+For actuarial students, R is an essential tool for data analysis,
+modeling, and simulation. Actuaries use statistical techniques and
+models to evaluate and manage financial risks, and R provides a wide
+range of tools for performing these tasks.
+
+R allows actuarial students to perform statistical analysis, generate
+reports, and create visualizations that can help them communicate
+complex financial concepts to stakeholders. With R, students can easily
+handle large data sets, perform statistical modeling, and make
+predictions about future events.
+
+Moreover, R is becoming more widely used in the actuarial industry, with
+many employers now requiring their employees to have a working knowledge
+of the language. As such, learning R can give actuarial students a
+competitive edge in the job market and help them advance in their
+careers.
+
+In summary, R is important for actuarial students because it provides
+them with a powerful tool for data analysis, modeling, and simulation
+that is increasingly in demand in the actuarial profession.
+
+\hypertarget{install-r-and-rstudio}{%
+\subsection{Install R and RStudio:}\label{install-r-and-rstudio}}
+
+Installing R and RStudio is a relatively straightforward process. Here
+are the steps to follow:
+
+\begin{itemize}
+\item
+  Installing R
+\item
+  Go to the official R project website at
+  {[}**https://www.r-project.org/**{]}(https://www.r-project.org/)
+\item
+  Click on the ``CRAN'' link under the ``Download'' section on the
+  left-hand side of the page
+\item
+  Select a mirror location near you
+\item
+  Choose the appropriate installation file for your operating system
+  (e.g., Windows, Mac, or Linux)
+\item
+  Download and run the installation file
+\item
+  Follow the prompts to complete the installation
+\item
+  Installing RStudio
+\item
+  Go to the official RStudio website at
+  {[}**https://www.rstudio.com/products/rstudio/download/**{]}(https://www.rstudio.com/products/rstudio/download/)
+\item
+  Choose the appropriate version of RStudio for your operating system
+  (e.g., Windows, Mac, or Linux)
+\item
+  Download and run the installation file
+\item
+  Follow the prompts to complete the installation
+\end{itemize}
+
+Once you have both R and RStudio installed, you can launch.RStudio and
+start using R to perform data analysis, modeling, and simulation. In
+RStudio, you can write and run R code in the Console, which is located
+in the bottom left-hand corner of the screen. You can also create and
+save R scripts, plots, and reports using the various tabs in the top
+right-hand corner of the screen.
 
 \bookmarksetup{startatroot}
 
