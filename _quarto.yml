@@ -7,6 +7,7 @@ book:
   date: "3/8/2023"
   chapters:
     - index.qmd
+    - Chapter1.qmd
     - intro.qmd
     - summary.qmd
     - references.qmd
